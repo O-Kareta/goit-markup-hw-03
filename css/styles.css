@@ -249,8 +249,7 @@ img {
 /* advantages */
 
 .column {
-  display: flex;
-  flex-wrap: wrap;
+  width: 264px;
 }
 
 .column .section-subtitle {
@@ -360,6 +359,10 @@ img {
   column-gap: 48px;
 }
 
+.portfolio-list {
+  flex-wrap: wrap;
+}
+
 .portfolio-card {
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
@@ -367,4 +370,8 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
+}
+
+.portfolio-item {
+  flex-basis: calc((100% - 48px) / 3);
 }
